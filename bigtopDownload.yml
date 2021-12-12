@@ -1,0 +1,8 @@
+--- 
+- name: downlaod bigtop-reopo
+  hosts: zookeeper
+  tasks: 
+   - name: download repo
+     get_url:
+        url: https://dlcdn.apache.org/bigtop/bigtop-3.0.0/repos/centos-7/bigtop.repo
+        dest: /etc/yum.repos.d/

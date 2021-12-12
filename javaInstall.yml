@@ -1,0 +1,8 @@
+---
+- name: openjdk1.8.0 install
+  hosts: zookeeper
+  tasks:
+    - name: install jdk
+      yum:
+        name: java-1.8.0*
+        state: latest

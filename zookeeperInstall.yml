@@ -1,0 +1,8 @@
+--- 
+- name: install zookeeper rpm
+  hosts: zookeeper
+  tasks:
+   - name: install zookeeper
+     yum:
+       name: zookeeper
+       state: latest
